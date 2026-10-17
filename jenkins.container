@@ -19,7 +19,7 @@ Secret=jenkins_alert_email,target=alert_email,uid=1000,gid=1000,mode=0400
 
 Environment=CASC_JENKINS_CONFIG=/var/jenkins_home/jcasc
 Environment=DOCKER_HOST=unix:///run/podman/podman.sock
-Environment=JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+Environment=JAVA_OPTS="-Djenkins.install.runSetupWizard=false -Dhudson.slaves.ChannelPinger.pingIntervalSeconds=30 -Dhudson.slaves.ChannelPinger.pingTimeoutSeconds=30"
 Environment=TZ=America/Denver
 
 Volume=pinp-socket.volume:/run/podman:ro,z
