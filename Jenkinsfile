@@ -21,8 +21,8 @@ quadletPipeline(
         [
             type: 'usernamePassword',
             credentialsId: 'Email noreply',
-            podmanSecretUsernameName: 'jenkins_smtp_username',
-            podmanSecretPasswordName: 'jenkins_smtp_password'
+            podmanSecretUsernameName: 'lab_smtp_username',
+            podmanSecretPasswordName: 'lab_smtp_password'
         ],
         [
             type: 'string',

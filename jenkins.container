@@ -13,9 +13,9 @@ Secret=jenkins_admin_username,target=admin_username,uid=1000,gid=1000,mode=0400
 Secret=jenkins_admin_password,target=admin_password,uid=1000,gid=1000,mode=0400
 Secret=jenkins_git_username,target=git_username,uid=1000,gid=1000,mode=0400
 Secret=jenkins_git_token,target=git_token,uid=1000,gid=1000,mode=0400
-Secret=jenkins_smtp_username,target=smtp_username,uid=1000,gid=1000,mode=0400
-Secret=jenkins_smtp_password,target=smtp_password,uid=1000,gid=1000,mode=0400
 Secret=jenkins_alert_email,target=alert_email,uid=1000,gid=1000,mode=0400
+Secret=lab_smtp_username,target=smtp_username,uid=1000,gid=1000,mode=0400
+Secret=lab_smtp_password,target=smtp_password,uid=1000,gid=1000,mode=0400
 
 Environment=CASC_JENKINS_CONFIG=/var/jenkins_home/jcasc
 Environment=DOCKER_HOST=unix:///run/podman/podman.sock
