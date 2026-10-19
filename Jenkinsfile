@@ -9,24 +9,25 @@ quadletPipeline(
         [
             type: 'usernamePassword',
             credentialsId: 'Jenkins',
-            podmanSecretUsernameName: 'jenkins_admin_username',
-            podmanSecretPasswordName: 'jenkins_admin_password'
+            podmanSecretPasswordName: 'jenkins_admin_password',
+            podmanSecretUsernameName: 'jenkins_admin_username'
         ],
         [
             type: 'usernamePassword',
             credentialsId: 'Forgejo PAT',
-            podmanSecretUsernameName: 'jenkins_git_username',
-            podmanSecretPasswordName: 'jenkins_git_token'
+            podmanSecretPasswordName: 'jenkins_git_token',
+            podmanSecretUsernameName: 'jenkins_git_username'
         ],
         [
             type: 'usernamePassword',
             credentialsId: 'Email noreply',
-            podmanSecretUsernameName: 'lab_smtp_username',
-            podmanSecretPasswordName: 'lab_smtp_password'
+            podmanSecretPasswordName: 'lab_smtp_password',
+            podmanSecretUsernameName: 'lab_smtp_username'
         ],
         [
             type: 'string',
-            credentialsId: 'jenkins_alert_email'
+            credentialsId: 'jenkins-alert-email',
+            podmanSecretStringName: 'jenkins_alert_email'
         ]
     ]
 )
