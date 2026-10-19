@@ -120,13 +120,14 @@ unclassified:
 
   globalLibraries:
     libraries:
-      - name: "JenkinsPipelines"
+      - name: "jenkins-pipelines"
         defaultVersion: "main"
+        implicit: true
         retriever:
           modernSCM:
             scm:
               gitSource:
-                remote: "https://git.mwdle.com/lab/JenkinsPipelines.git" # https://github.com/mwdle/JenkinsPipelines
+                remote: "https://git.mwdle.com/lab/jenkins-pipelines.git" # https://github.com/mwdle/jenkins-pipelines
                 credentialsId: "git-creds"
                 traits:
                   - "gitBranchDiscovery"
