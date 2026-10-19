@@ -101,7 +101,7 @@ security:
 unclassified:
   location:
     url: "https://jenkins.mwdle.com/"
-    adminAddress: "${alert_email}"
+    adminAddress: "${smtp_username}"
 
   bitwarden:
     cliExecutablePath: "/usr/local/bin/bw"
