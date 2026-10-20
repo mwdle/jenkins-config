@@ -28,7 +28,7 @@ Volume=./jcasc:/var/jenkins_home/jcasc:ro,Z
 
 ReadOnly=true
 ReadOnlyTmpfs=false
-Tmpfs=/tmp
+Tmpfs=/tmp:noexec,nosuid
 
 UserNS=auto
 NoNewPrivileges=true
