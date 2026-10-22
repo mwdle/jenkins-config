@@ -7,6 +7,8 @@ Network=jenkins.network
 
 AddDevice=/dev/net/tun
 
+Timezone=local
+
 Volume=pinp-socket.volume:/run/podman:U,z
 Volume=/home/podman/.local/share/containers
 Volume=/home/podman/.cache
