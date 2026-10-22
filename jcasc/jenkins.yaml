@@ -32,7 +32,7 @@ jenkins:
               failIfWorkDirIsMissing: false
               internalDir: "remoting"
         mode: EXCLUSIVE
-        name: "lb"
+        name: "lab"
         numExecutors: 1
         remoteFS: "/home/jenkins"
         retentionStrategy: always
