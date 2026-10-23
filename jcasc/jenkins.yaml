@@ -128,7 +128,10 @@ unclassified:
                 credentialsId: "git-creds"
                 traits:
                   - "gitBranchDiscovery"
-                  - "browser"
+                  - browser:
+                      browser:
+                        giteaBrowser:
+                          repoUrl: "https://git.mwdle.com/lab/jenkins-pipelines" # https://github.com/mwdle/jenkins-pipelines
 
   mailer:
     replyToAddress: "Jenkins <${smtp_username}>"
