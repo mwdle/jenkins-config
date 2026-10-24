@@ -1,5 +1,4 @@
-organizationFolder('git.mwdle.com') {
-    displayName('mwdle Hosting')
+organizationFolder('lab') {
     triggers {
         periodicFolderTrigger {
             interval('1h')
