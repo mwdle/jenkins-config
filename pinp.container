@@ -1,5 +1,5 @@
 [Container]
-Image=quay.io/podman/stable:v5.8.9-immutable@sha256:0ccbc4e7f79f9c33e7fc959be59f714abbc0f4c9cffbe14f5bceff537a014738
+Image=quay.io/podman/stable:v6.1.3-immutable@sha256:4cc31850c189386faca95d72988fe9573b3df06360cb65aea3ff5b17a04d0454
 ContainerName=pinp
 
 # Pull from container registry via Caddy container on Jenkins network
