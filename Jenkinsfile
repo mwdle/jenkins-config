@@ -1,8 +1,5 @@
-boolean disableIndexTriggers = env.BRANCH_NAME != 'main'
-
 quadletPipeline(
     agentLabel: 'persistent',
-    disableIndexTriggers: disableIndexTriggers,
     podmanSecretMappings: [
         [
             type: 'usernamePassword',

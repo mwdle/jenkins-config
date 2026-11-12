@@ -29,4 +29,10 @@ organizationFolder('lab') {
             scriptPath('Jenkinsfile')
         }
     }
+    properties {
+        suppressFolderAutomaticTriggering {
+            branches('^main$')
+            strategy('NONE')
+        }
+    } 
 }
