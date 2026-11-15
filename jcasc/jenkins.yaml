@@ -72,7 +72,8 @@ jenkins:
               image: "git.mwdle.com/lab/jenkins-agent:latest"
               pullCredentialsId: "git-creds" # Credential ID for git server credentials -- see gitcreds seed job (`jenkins/gitcreds.groovy`)
               environmentsString: |-
-                CONTAINER_HOST=unix:///run/podman/podman.sock
+                CONTAINER_HOST=${DOCKER_HOST}
+                DOCKER_HOST=${DOCKER_HOST}
               mountsString: |-
                 type=volume,source=trivy-cache,destination=/home/jenkins/.cache/trivy
                 type=bind,source=/run/podman/podman.sock,destination=/run/podman/podman.sock,readonly
