@@ -28,10 +28,9 @@ SecurityLabelType=container_engine_t
 # https://github.com/podman-container-tools/podman/issues/19909
 Exec=/usr/libexec/catatonit/catatonit -- podman system service --time=0 unix:///run/podman/podman.sock
 
-HealthStartupCmd=podman --remote --url unix:///run/podman/podman.sock info > /dev/null || exit 1
+HealthCmd=podman --remote --url unix:///run/podman/podman.sock info > /dev/null || exit 1
 HealthStartupInterval=5s
 HealthStartupTimeout=5s
-HealthCmd=podman --remote --url unix:///run/podman/podman.sock info > /dev/null || exit 1
 HealthInterval=30s
 HealthTimeout=5s
 HealthOnFailure=kill

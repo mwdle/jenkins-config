@@ -36,10 +36,9 @@ NoNewPrivileges=true
 DropCapability=all
 SecurityLabelType=container_engine_t
 
-HealthStartupCmd=curl -fSs -o /dev/null http://localhost:8080/health || exit 1
+HealthCmd=curl -fSs -o /dev/null http://localhost:8080/health || exit 1
 HealthStartupInterval=5s
 HealthStartupTimeout=5s
-HealthCmd=curl -fSs -o /dev/null http://localhost:8080/health || exit 1
 HealthInterval=30s
 HealthTimeout=5s
 HealthOnFailure=kill
