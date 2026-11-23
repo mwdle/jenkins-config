@@ -1,5 +1,5 @@
 [Container]
-Image=quay.io/podman/stable:v6.1.3-immutable@sha256:4cc31850c189386faca95d72988fe9573b3df06360cb65aea3ff5b17a04d0454
+Image=quay.io/podman/stable:v6.2.0-immutable@sha256:e0da0a3aba6b332587c693dc206efa2dd2888dde286c280ef852cbad72c0e701
 ContainerName=pinp
 
 # Pull from container registry via Caddy container on Jenkins network
@@ -12,6 +12,7 @@ Timezone=local
 Volume=pinp-socket.volume:/run/podman:U,z
 Volume=/home/podman/.cache
 Volume=./pinp-containers.conf:/home/podman/.config/containers/containers.conf.d/pinp-containers.conf:ro,Z
+Volume=./pinp-storage.conf:/home/podman/.config/containers/storage.conf.d/pinp-storage.conf:ro,Z
 
 ReadOnly=true
 
