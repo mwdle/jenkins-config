@@ -12,6 +12,7 @@ Timezone=local
 Volume=pinp-socket.volume:/run/podman:U,z
 Volume=/home/podman/.cache
 Volume=./pinp-containers.conf:/home/podman/.config/containers/containers.conf.d/pinp-containers.conf:ro,Z
+Volume=./pinp-storage.conf:/home/podman/.config/containers/storage.conf.d/pinp-storage.conf:ro,Z
 
 ReadOnly=true
 
