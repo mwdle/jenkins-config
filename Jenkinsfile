@@ -9,7 +9,7 @@ quadletPipeline(
         ],
         [
             type: 'usernamePassword',
-            credentialsId: 'Forgejo PAT',
+            credentialsId: 'jenkins-forgejo-token',
             podmanSecretPasswordName: 'jenkins_git_token',
             podmanSecretUsernameName: 'jenkins_git_username'
         ],
